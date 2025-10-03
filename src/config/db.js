@@ -36,7 +36,8 @@ eU3UIBGOWTS+beCFDLFbuSv4e1tBAjlP5aN6G6kk3lPnIX+05c9kg/rKMcmnC6cI
 bam9Y34D97TSr6OGGgKFei4eiMYfpCY/iZgEq0Vp3GJchbeqVEr8zQ6hJyrAk77W
 2I0KSw==
 -----END CERTIFICATE-----
-    `
+    `,
+    rejectUnauthorized: false,
   },
   waitForConnections: true,
   connectionLimit: 10,
