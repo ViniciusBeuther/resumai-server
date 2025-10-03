@@ -1,4 +1,4 @@
-const pool = require('./config/db');
+const pool = require('./src/config/db');
 
 // import libs
 const express = require('express');
