@@ -1,3 +1,5 @@
+const pool = require('./config/db');
+
 // import libs
 const express = require('express');
 const dotenv = require('dotenv');
