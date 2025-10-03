@@ -3,7 +3,7 @@ require('dotenv').config();
 
 console.log('🔧 Inicializando configuração do banco...');
 console.log('Host:', process.env.DB_HOST);
-console.log('Port:', process.env.DB_PORT);
+console.log('Port:', process.env.PORT);
 console.log('User:', process.env.DB_USER);
 console.log('Database:', process.env.DB_DATABASE);
 
