@@ -186,18 +186,19 @@ Agora crie o resumo médico seguindo precisamente todas estas diretrizes. Lembre
 
         // Save into DB
         const [chatResult] = await pool.query(
-            "INSERT INTO Chats(user_id) VALUES(?)",
+            "INSERT INTO chats(user_id) VALUES(?)",
             [userId]
         );
         const insertedChatId = chatResult.insertId;
 
         await pool.query(
-            "INSERT INTO Messages(question, response, chat_id) VALUES(?, ?, ?)",
+            "INSERT INTO messages(question, response, chat_id) VALUES(?, ?, ?)",
             [question, response, insertedChatId]
         );
 
         return res.status(202).json({ user_id: userId, response });
     } catch (error) {
+        
         console.log(`chat.controller.ask - An error occurred asking question: ${error}`);
         return res
             .status(500)
